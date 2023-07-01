@@ -1,6 +1,8 @@
-<div>
-  <h1>{{ currentQuestion.question }}</h1>
-  <p>Temps restant: {{ timeLeft }}</p>
-  <button (click)="answerQuestion(true)">Vrai</button>
-  <button (click)="answerQuestion(false)">Faux</button>
+<div class="container">
+  <h1>{{ currentQuestion?.question }}</h1>
+  <div class="timer">Temps restant: {{ timeLeft }}</div>
+  <div class="options">
+    <button class="true" (click)="answerQuestion(true)">Vrai</button>
+    <button class="false" (click)="answerQuestion(false)">Faux</button>
+  </div>
 </div>
